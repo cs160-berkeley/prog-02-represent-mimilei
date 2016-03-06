@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Represent</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+    <string name="title_activity_reps_glance">RepsGlanceActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_shake_info">ShakeInfoActivity</string>
+    <string name="title_activity_current_location">CurrentLocationActivity</string>
+    <string name="title_activity_zipcode">ZipcodeActivity</string>
+
+    <string name="shake_explanation">Shake the watch at any time to see information about a random location in the U.S.!</string>
+    <string name="title_activity_district_menu">DistrictMenuActivity</string>
+    <string name="title_activity_vote_view">VoteViewActivity</string>
+</resources>
