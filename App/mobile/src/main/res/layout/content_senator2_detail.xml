@@ -37,7 +37,7 @@
                 android:paddingLeft="10dp"
                 android:textSize="@dimen/rep_name"
                 android:textColor="@color/offWhite"
-                android:text="@string/house"
+                android:text="@string/senator2"
                 android:id="@+id/textView" />
             <LinearLayout
                 android:id="@+id/house_basic_info"

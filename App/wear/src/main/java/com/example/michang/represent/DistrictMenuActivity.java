@@ -6,13 +6,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class DistrictMenuActivity extends Activity {
 
     private String zip;
     private Button chooseVote;
     private Button chooseCongress;
-
+    private TextView county;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,10 @@ public class DistrictMenuActivity extends Activity {
             zip = getIntent().getExtras().getString("ZIPCODE");
         }
         Log.d("DistrictMenuActivity", "Received zip = " + zip);
+        if (!zip.equals("95129")) {
+            county = (TextView)findViewById(R.id.county);
+            county.setText("Big Edo County");
+        }
         chooseVote = (Button)findViewById(R.id.vote_button);
         chooseCongress = (Button)findViewById(R.id.congress_button);
         chooseVote.setOnClickListener(new View.OnClickListener() {

@@ -10,7 +10,7 @@ Michelle Chang ([michang@berkeley.edu](mailto:michang@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [Prog2B: Represent] (https://youtu.be/wNNKaF7Djg0)
 
 ## Screenshots
 
@@ -21,6 +21,7 @@ See [your demo video title here] (https://link_to_your_video)
 <img src="screenshots/watch_menu.png" height="200" alt="Screenshot"/>
 <img src="screenshots/watch_zipcode.png" height="200" alt="Screenshot"/>
 <img src="screenshots/watch_areamenu.png" height="200" alt="Screenshot"/>
+<img src="screenshots/voteView.png" height="200" alt="Screenshot"/>
 
 ## Acknowledgments
 
