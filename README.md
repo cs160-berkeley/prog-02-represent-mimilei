@@ -17,6 +17,7 @@ See [Prog2B: Represent] (https://youtu.be/wNNKaF7Djg0)
 <img src="screenshots/mobile_main.png" height="400" alt="Screenshot"/>
 <img src="screenshots/mobile_glanceview.png" height="400" alt="Screenshot"/>
 <img src="screenshots/mobile_detail.png" height="400" alt="Screenshot"/>
+<img src="screenshots/repub.png" height="400" alt="Screenshot"/>
 <img src="screenshots/watch_main.png" height="200" alt="Screenshot"/>
 <img src="screenshots/watch_menu.png" height="200" alt="Screenshot"/>
 <img src="screenshots/watch_zipcode.png" height="200" alt="Screenshot"/>
