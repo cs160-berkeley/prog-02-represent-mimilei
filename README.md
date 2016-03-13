@@ -12,6 +12,8 @@ Michelle Chang ([michang@berkeley.edu](mailto:michang@berkeley.edu))
 
 See [Prog2B: Represent] (https://youtu.be/wNNKaF7Djg0)
 
+See [Prog2C: Represent](https://youtu.be/6_hgavBjX6g)
+
 ## Screenshots
 
 <img src="screenshots/mobile_main.png" height="400" alt="Screenshot"/>
