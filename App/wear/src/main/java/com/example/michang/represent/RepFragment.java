@@ -37,15 +37,11 @@ public class RepFragment extends CardFragment {
 
     @Override
     public View onCreateContentView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstanceState) {
-//        fragmentView = super.onCreateContentView(inflater, container, savedInstanceState);
-//        fragmentView = inflater.inflate(R.layout.fragment_rep, null);
         fragmentView = inflater.inflate(R.layout.fragment_rep, container, false);
         TextView person = (TextView) fragmentView.findViewById(R.id.rep_name);
         person.setText(getArguments().getString("name"));
         TextView party = (TextView) fragmentView.findViewById(R.id.rep_party);
         party.setText(getArguments().getString("party"));
-//        FrameLayout f = (FrameLayout) fragmentView.findViewById(R.id.rep_frame);
-//        f.setBackground(mContext.getResources().getDrawable(getArguments().getInt("portrait")));
         fragmentView.setOnClickListener(new View.OnClickListener() {
             TextView text_name = new TextView(getActivity());
 
@@ -54,9 +50,6 @@ public class RepFragment extends CardFragment {
                 Intent openPhoneDetail = new Intent(mContext, WatchToPhoneService.class);
                 openPhoneDetail.putExtra("REP_TYPE", reptype);
                 mContext.startService(openPhoneDetail);
-//                if (listener != null) {
-//                    listener.onClick(view);
-//                }
             }
         });
         return fragmentView;

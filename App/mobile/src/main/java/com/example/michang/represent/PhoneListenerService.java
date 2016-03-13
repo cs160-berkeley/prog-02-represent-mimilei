@@ -17,6 +17,7 @@ public class PhoneListenerService extends WearableListenerService {
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
         Log.d("T", "in PhoneListenerService, got: " + messageEvent.getPath());
+
         if (messageEvent.getPath().equalsIgnoreCase(HOUSE)) {
 //            String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
             Intent intent = new Intent(this, HouseDetailActivity.class);

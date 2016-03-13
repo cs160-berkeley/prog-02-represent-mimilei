@@ -26,12 +26,13 @@
     <style name="RepName">
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textStyle">normal</item>
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">12dp</item>
     </style>
 
     <style name="Answer">
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20dp</item>
     </style>
 
     <style name="TwitterUser">

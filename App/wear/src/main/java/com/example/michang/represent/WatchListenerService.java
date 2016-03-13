@@ -13,19 +13,30 @@ public class WatchListenerService extends WearableListenerService {
     // In PhoneToWatchService, we passed in a path, either "/FRED" or "/LEXY"
     // These paths serve to differentiate different phone-to-watch messages
     private static final String SANJOSE = "/95129";
-
+    private static final String SUNLIGHT = "/sunlight";
+    private static final String RAWJSON = "/RAWJSON";
     @Override
     public void onMessageReceived(MessageEvent messageEvent) {
         Log.d("T", "in WatchListenerService, got: " + messageEvent.getPath());
-        //use the 'path' field in sendmessage to differentiate use cases
+        //use the 'path' field in sendmessage to differentiate use case
 
-        if( messageEvent.getPath().equalsIgnoreCase( SANJOSE ) ) {
+        if( messageEvent.getPath().equalsIgnoreCase( SUNLIGHT ) ) {
             String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
+            Log.d("message value", value);
             Intent intent = new Intent(this, RepsGlanceActivity.class );
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             //you need to add this flag since you're starting a new activity from a service
-            intent.putExtra("ZIPCODE", "95129");
-            Log.d("T", "about to start watch RepsGlanceActivity with ZIPCODE: 95129");
+            intent.putExtra("SUNLIGHT", value);
+            Log.d("watchListener", value);
+            startActivity(intent);
+        } else if (messageEvent.getPath().equalsIgnoreCase( RAWJSON)) {
+            String value = new String(messageEvent.getData(), StandardCharsets.UTF_8);
+            Log.d("message value", value);
+            Intent intent = new Intent(this, RepsGlanceActivity.class );
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            //you need to add this flag since you're starting a new activity from a service
+            intent.putExtra("RAWJSON", value);
+            Log.d("watchListener", value);
             startActivity(intent);
         }
 //        else if (messageEvent.getPath().equalsIgnoreCase( LEXY_FEED )) {

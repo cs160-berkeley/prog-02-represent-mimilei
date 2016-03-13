@@ -29,6 +29,6 @@
     <string name="title_activity_house_detail">HouseDetailActivity</string>
     <string name="title_activity_senator1_detail">Senator1DetailActivity</string>
     <string name="title_activity_senator2_detail">Senator2DetailActivity</string>
+    <string name="title_activity_general_detail">GeneralDetail</string>
 
-    <string name="googlel_api_id">24310846492</string>
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_key">apikey=89dfa91887d84874918993d2fd56e6af</string>
+    <string name="find_congress_stub">http://congress.api.sunlightfoundation.com/legislators/locate?</string>
+    <string name="congress_home">http://congress.api.sunlightfoundation.com/legislators/locate?latitude=37.338&amp;longitude=-121.886&amp;apikey=89dfa91887d84874918993d2fd56e6af</string>
+    <string name="img_stub">https://theunitedstates.io/images/congress/225x275/</string>
+    <string name="find_committees_stub">http://congress.api.sunlightfoundation.com/committees?member_ids=</string>
+    <string name="find_bills_stub">http://congress.api.sunlightfoundation.com/bills?sponsor_id=</string>
+</resources>

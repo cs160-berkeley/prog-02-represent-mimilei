@@ -22,7 +22,8 @@
 
     <!--</android.support.design.widget.AppBarLayout>-->
 
-    <include layout="@layout/content_reps_at_aglance" />
+    <!--<include layout="@layout/content_reps_at_aglance" />-->
+    <include layout="@layout/content_reps_glance" />
 
     <!--<android.support.design.widget.FloatingActionButton-->
         <!--android:id="@+id/fab"-->

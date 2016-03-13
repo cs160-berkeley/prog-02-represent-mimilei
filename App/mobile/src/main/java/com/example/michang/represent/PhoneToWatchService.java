@@ -57,7 +57,11 @@ public class PhoneToWatchService extends Service {
         // Get entered zipcode from INTENT
         // which was passed over when we called startService
         Bundle extras = intent.getExtras();
-        final String zipcode = extras.getString("ZIPCODE");
+        final String raw_json = extras.getString("RAWJSON");
+
+//        Log.d("SUNLIGHT", sunlight_url);
+        Log.d("RAWJSON", raw_json);
+//        final String zipcode = extras.getString("ZIPCODE");
         // Send the message with the cat name
         new Thread(new Runnable() {
             @Override
@@ -65,7 +69,8 @@ public class PhoneToWatchService extends Service {
                 //first, connect to the apiclient
                 mApiClient.connect();
                 //now that you're connected, send a message with the cat name
-                sendMessage("/" + zipcode, zipcode);
+                sendMessage("/" + "RAWJSON", raw_json);
+//                sendMessage("/" + sunlight_url, sunlight_url);
             }
         }).start();
 

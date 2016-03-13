@@ -23,19 +23,17 @@ public class VoteViewActivity extends Activity {
 //                mTextView = (TextView) stub.findViewById(R.id.text);
 //            }
 //        });
-
+        TextView c = (TextView)findViewById(R.id.county);
+        TextView s = (TextView)findViewById(R.id.state);
         obama = (TextView)findViewById(R.id.obamaPercent);
         romney = (TextView)findViewById(R.id.romneyPercent);
 
         zip = getIntent().getExtras().getString("ZIPCODE");
         Log.d("VoteViewActivity", "got zip = " + zip);
-        if (!zip.equals("95129")) {
-            obama.setText("80%");
-            romney.setText("10%");
-        }
-        if (zip.equals("90000")) {
-            obama.setText("100%");
-            romney.setText("0%");
-        }
+        obama.setText(DistrictMenuActivity.obama + "%");
+        romney.setText(DistrictMenuActivity.romney + "%");
+        c.setText(DistrictMenuActivity.curr_county);
+        s.setText(DistrictMenuActivity.curr_state);
+
     }
 }
